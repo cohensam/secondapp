@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @room_rate.Name %>
+</p>
+
+<p>
+  <b>Roommate:</b>
+  <%= @room_rate.Roommate %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%= @room_rate.Building %>
+</p>
+
+<p>
+  <b>Floor:</b>
+  <%= @room_rate.Floor %>
+</p>
+
+<p>
+  <b>Roomnumber:</b>
+  <%= @room_rate.RoomNumber %>
+</p>
+
+<p>
+  <b>Layout:</b>
+  <%= @room_rate.Layout %>
+</p>
+
+<p>
+  <b>Condition:</b>
+  <%= @room_rate.Condition %>
+</p>
+
+
+<%= link_to 'Edit', edit_room_rate_path(@room_rate) %> |
+<%= link_to 'Back', room_rates_path %>

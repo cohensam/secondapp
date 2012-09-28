@@ -1,0 +1,34 @@
+p {
+	font-size: 12pt;
+	font-family: Papyrus, Times;
+	font-weight: normal;
+	font-style: normal;
+	color: #57A957;
+	background-color:#222222;
+}
+a {
+	color: blue;
+	font-family: Times;
+}
+link {
+	color: blue;
+	font-family: Times;
+	text-decoration: underline;
+}
+body {
+	font-size: 12pt;
+	font-family: "Bodoni MT";
+	font-weight: normal;
+	font-style: normal;
+	color: #BD362F;
+	background-color: black;
+}
+h1 {
+	font-size: 20pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: capitalize;
+	color:#F89406;
+	background-color:#DD1144;
+}

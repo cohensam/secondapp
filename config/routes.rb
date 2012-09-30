@@ -1,7 +1,9 @@
 Secondapp::Application.routes.draw do
   resources :seas_matches
-
+  root :to => 'seas_matches#index'
   resources :users
+  
+    root :to => 'users#index'
 
   resources :room_rates
 

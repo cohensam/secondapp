@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Graduation_Year: MyString
+  Major: MyString
+  Minor: MyString
+  Description: MyString
+  Interests: MyString
+
+two:
+  Name: MyString
+  Graduation_Year: MyString
+  Major: MyString
+  Minor: MyString
+  Description: MyString
+  Interests: MyString

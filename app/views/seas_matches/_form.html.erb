@@ -1,0 +1,41 @@
+<%= form_for(@seas_match) do |f| %>
+  <% if @seas_match.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seas_match.errors.count, "error") %> prohibited this seas_match from being saved:</h2>
+
+      <ul>
+      <% @seas_match.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Graduation_Year %><br />
+    <%= f.text_field :Graduation_Year %>
+  </div>
+  <div class="field">
+    <%= f.label :Major %><br />
+    <%= f.text_field :Major %>
+  </div>
+  <div class="field">
+    <%= f.label :Minor %><br />
+    <%= f.text_field :Minor %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Interests %><br />
+    <%= f.text_field :Interests %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

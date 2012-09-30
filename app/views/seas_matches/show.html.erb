@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @seas_match.Name %>
+</p>
+
+<p>
+  <b>Graduation year:</b>
+  <%= @seas_match.Graduation_Year %>
+</p>
+
+<p>
+  <b>Major:</b>
+  <%= @seas_match.Major %>
+</p>
+
+<p>
+  <b>Minor:</b>
+  <%= @seas_match.Minor %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @seas_match.Description %>
+</p>
+
+<p>
+  <b>Interests:</b>
+  <%= @seas_match.Interests %>
+</p>
+
+
+<%= link_to 'Edit', edit_seas_match_path(@seas_match) %> |
+<%= link_to 'Back', seas_matches_path %>

@@ -1,4 +1,6 @@
 Secondapp::Application.routes.draw do
+  resources :seas_matches
+
   resources :users
 
   resources :room_rates

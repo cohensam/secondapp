@@ -1,4 +1,6 @@
 Secondapp::Application.routes.draw do
+  resources :users
+
   resources :room_rates
 
   # The priority is based upon order of creation:

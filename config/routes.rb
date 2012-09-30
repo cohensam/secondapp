@@ -1,13 +1,9 @@
 Secondapp::Application.routes.draw do
+  resources :login_keys
+    root :to => 'login_keys#index'
   resources :seas_matches
     root :to => 'seas_matches#index'
-end
-Secondapp::Application.routes.draw do
-  resources :users
-  
-    root :to => 'users#index'
-end
-Secondapp::Application.routes.draw do
+
   resources :room_rates
 
   # The priority is based upon order of creation:

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @login_key.Name %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @login_key.Password %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @login_key.Email %>
+</p>
+
+<p>
+  <b>Security question:</b>
+  <%= @login_key.Security_Question %>
+</p>
+
+
+<%= link_to 'Edit', edit_login_key_path(@login_key) %> |
+<%= link_to 'Back', login_keys_path %>

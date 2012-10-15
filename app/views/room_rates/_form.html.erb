@@ -1,4 +1,4 @@
-<%= form_for(@room_rate) do |f| %>
+<%= form_for(@room_rate, html: {class: "form-horizontal"}) do |f| %>
   <% if @room_rate.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@room_rate.errors.count, "error") %> prohibited this room_rate from being saved:</h2>
@@ -10,36 +10,86 @@
       </ul>
     </div>
   <% end %>
+  
 
+  	<img src="http://www.dolphin.upenn.edu/ballroom/upenn-classic-2012/img/housing01.jpg" class="img-polaroid">
+
+<form class="form-horizontal">
   <div class="field">
-    <%= f.label :Name %><br />
+  	<div class="text-error text-font-papyrus control-group">
+    <%= f.label :Name, class: 'control-label' %>
+    <div class = "controls">
     <%= f.text_field :Name %>
+    </div>
+  </div>
   </div>
   <div class="field">
-    <%= f.label :Roommate %><br />
+  	<div class ="text-error control-group">
+    <%= f.label :Roommate, class: 'control-label' %>
+    <div class ="controls">
     <%= f.text_field :Roommate %>
+    </div>
+  </div>
   </div>
   <div class="field">
-    <%= f.label :Building %><br />
+  	<div class ="text-error control-group">
+    <%= f.label :Building, class: 'control-label' %>
+        <div class ="controls">
     <%= f.text_field :Building %>
   </div>
+  </div>
+  </div>
   <div class="field">
-    <%= f.label :Floor %><br />
+  	 	<div class ="text-error control-group">
+    <%= f.label :Floor, class: 'control-label' %>
+      <div class ="controls">
     <%= f.text_field :Floor %>
   </div>
+  </div>
+  </div>
   <div class="field">
-    <%= f.label :RoomNumber %><br />
+  	 	<div class ="text-error control-group">
+    <%= f.label "Room Number", class: 'control-label' %>
+      <div class ="controls">
     <%= f.text_field :RoomNumber %>
   </div>
+  </div>
+  </div>
   <div class="field">
-    <%= f.label :Layout %><br />
+  	 	<div class ="text-error control-group">
+    <%= f.label :Layout, class: 'control-label' %>
+      <div class ="controls">
     <%= f.text_field :Layout %>
   </div>
+  </div>
+  </div>
   <div class="field">
-    <%= f.label :Condition %><br />
-    <%= f.text_field :Condition %>
+  	 	<div class ="text-error control-group">
+    <%= f.label :Condition, class: 'control-label' %>
+    <div class ="controls form-inline">
+   	<i class="icon-hand-up"></i>
+    <%= radio_button_tag(:Condition, "Excellent") %> 
+    <%= label_tag(:Condition_poor, "Excellent") %>
+    <i class="icon-thumbs-up"></i>
+    <%= radio_button_tag(:Condition, "Good") %>
+  	<%= label_tag(:Condition_good, "Good") %>
+  	<i class="icon-hand-right"></i>
+  	<%= radio_button_tag(:Condition, "Average") %>
+  	<%= label_tag(:Condition_poor, "Average") %>
+  	<i class="icon-thumbs-down"></i>
+  	<%= radio_button_tag(:Condition, "Poor") %>
+  	<%= label_tag(:Condition_poor, "Poor") %>
+  	<i class="icon-hand-down"></i>
+  	<%= radio_button_tag(:Condition, "Uninhabitable") %>
+  	<%= label_tag(:Condition_poor, "Uninhabitable") %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
   </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit class: "btn btn-large btn-danger" %>
+    <i class="icon-home"></i>
+    <a class="btn btn-large" href="http://secondapp2.herokuapp.com/room_rates">Cancel</a>
+  </div>
+  </form>
+  
 <% end %>

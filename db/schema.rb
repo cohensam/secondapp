@@ -11,43 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121001030806) do
-
-  create_table "login_keys", :force => true do |t|
-    t.string   "Name"
-    t.string   "Password"
-    t.string   "Email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20121019183145) do
 
   create_table "room_rates", :force => true do |t|
     t.string   "Name"
-    t.string   "Roommate"
-    t.string   "Building"
-    t.string   "Floor"
-    t.string   "RoomNumber"
-    t.string   "Layout"
     t.string   "Condition"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "seas_matches", :force => true do |t|
-    t.string   "Name"
-    t.string   "Graduation_Year"
-    t.string   "Major"
-    t.string   "Minor"
-    t.string   "Description"
-    t.string   "Interests"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "pasword"
-    t.string   "email"
+    t.string   "RoomNumber"
+    t.string   "Floor"
+    t.string   "Layout"
+    t.string   "Buiding"
+    t.string   "Roommate"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

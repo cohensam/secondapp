@@ -16,7 +16,7 @@
 
 <form class="form-horizontal">
   <div class="field">
-  	<div class="text-error text-font-papyrus control-group">
+  	<div class="text-error text-font-papyrus control-group <%= warningfor @room_rate, :Name %>">
     <%= f.label :Name, class: 'control-label' %>
     <div class = "controls">
     <%= f.text_field :Name %>
@@ -24,7 +24,7 @@
   </div>
   </div>
   <div class="field">
-  	<div class ="text-error control-group">
+  	<div class ="text-error control-group <%= warningfor @room_rate, :Roommate %>">
     <%= f.label :Roommate, class: 'control-label' %>
     <div class ="controls">
     <%= f.text_field :Roommate %>
@@ -32,7 +32,7 @@
   </div>
   </div>
   <div class="field">
-  	<div class ="text-error control-group">
+  	<div class ="text-error control-group <%= warningfor @room_rate, :Buiding %>">
     <%= f.label :Building, class: 'control-label' %>
         <div class ="controls">
     <%= f.text_field :Buiding %>
@@ -40,7 +40,7 @@
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group">
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Floor %>">
     <%= f.label :Floor, class: 'control-label' %>
       <div class ="controls">
     <%= f.text_field :Floor %>
@@ -48,7 +48,7 @@
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group">
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :RoomNumber %>">
     <%= f.label "Room Number", class: 'control-label' %>
       <div class ="controls">
     <%= f.text_field :RoomNumber %>
@@ -56,7 +56,7 @@
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group">
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Layout %>">
     <%= f.label :Layout, class: 'control-label' %>
       <div class ="controls">
     <%= f.text_field :Layout %>
@@ -64,23 +64,23 @@
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group">
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Condition %>">
     <%= f.label :Condition, class: 'control-label' %>
     <div class ="controls form-inline">
    	<i class="icon-hand-up"></i>
-    <%= radio_button_tag(:Condition, "Excellent") %> 
+    <%= f.radio_button(:Condition, "Excellent") %> 
     <%= label_tag(:Condition_poor, "Excellent") %>
     <i class="icon-thumbs-up"></i>
-    <%= radio_button_tag(:Condition, "Good") %>
+    <%= f.radio_button(:Condition, "Good") %>
   	<%= label_tag(:Condition_good, "Good") %>
   	<i class="icon-hand-right"></i>
-  	<%= radio_button_tag(:Condition, "Average") %>
+  	<%= f.radio_button(:Condition, "Average") %>
   	<%= label_tag(:Condition_poor, "Average") %>
   	<i class="icon-thumbs-down"></i>
-  	<%= radio_button_tag(:Condition, "Poor") %>
+  	<%= f.radio_button(:Condition, "Poor") %>
   	<%= label_tag(:Condition_poor, "Poor") %>
   	<i class="icon-hand-down"></i>
-  	<%= radio_button_tag(:Condition, "Uninhabitable") %>
+  	<%= f.radio_button(:Condition, "Uninhabitable") %>
   	<%= label_tag(:Condition_poor, "Uninhabitable") %>
   </div>
   </div>

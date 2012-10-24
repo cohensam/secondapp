@@ -1,7 +1,7 @@
 class RoomRate < ActiveRecord::Base
   
   validates :Name, presence: true
-  validates :Buiding, presence: true
+  validates :Building, presence: true
   validates :Floor, presence: true
   validates :Floor, numericality: true
   #vaidates :Floor, length: => {:minimum => 1}

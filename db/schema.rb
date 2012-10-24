@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20121019183145) do
     t.string   "RoomNumber"
     t.string   "Floor"
     t.string   "Layout"
-    t.string   "Buiding"
+    t.string   "Building"
     t.string   "Roommate"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

@@ -6,7 +6,7 @@ class CreateRoomRates < ActiveRecord::Migration
       t.string :RoomNumber
       t.string :Floor
       t.string :Layout
-      t.string :Buiding
+      t.string :Building
       t.string :Roommate
 
       t.timestamps

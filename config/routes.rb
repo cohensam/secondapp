@@ -1,4 +1,6 @@
 Secondapp::Application.routes.draw do
+  devise_for :names
+
   resources :login_keys
 
   resources :seas_matches

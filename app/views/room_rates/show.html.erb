@@ -35,6 +35,9 @@
   <%= @room_rate.Condition %>
 </p>
 
+<p>
+	Greeting: <%= session['greeting'] %>
+</p>
 
 <%= link_to 'Edit', edit_room_rate_path(@room_rate) %> |
 <%= link_to 'Back', room_rates_path %>

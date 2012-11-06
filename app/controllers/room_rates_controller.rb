@@ -1,8 +1,21 @@
 class RoomRatesController < ApplicationController
   # GET /room_rates
   # GET /room_rates.json
+ 
+  before_filter :authenticate_name!
+  
+  before_filter do
+      @names = Name.all
+  end
+  
+  def room_rates
+    names.room_rates
+  end
+  
   def index
     @room_rates = RoomRate.all
+    
+    session['greeting'] = 'hello!'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +26,7 @@ class RoomRatesController < ApplicationController
   # GET /room_rates/1
   # GET /room_rates/1.json
   def show
-    @room_rate = RoomRate.find(params[:id])
+    @room_rate = room_rates.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

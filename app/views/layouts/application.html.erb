@@ -6,20 +6,48 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+<div class="container">
 <body>
-	<% if alert %>
-	<div class="alert alert-error">
-	<%= alert %>
-	</div>
-	<% end %>
-	<% if notice %>
-	<div class="notice notice-error">
-	<%= notice %>
-	</div>
-	<% end %>
-<div class="container">	
-<%= yield %>
-</div>
+	<div class="container">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">	
+				<div class="container">
+					<a class="brand" href="#">Room Rate</a>
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+								<li>
+									<%= link_to "Home", root_path %>
+								 </li>
+								 <li>
+								 	<%= link_to "Room Rate", room_rates_path %>
+								 </li>
+							</ul>
+							<% if name_signed_in? %>
+							<%= link_to 'Logout', destroy_name_session_path, method: :delete, class: 'btn btn-inverse pull-right' %>
+							<% else %>
+							<%= form_for(Name.new, url: session_path(:name), html: { class: 'navbar-form pull-right' }) do |f| %>
+							<%= f.email_field :email, placeholder: "Email" %>
+							<%= f.password_field :password, placeholder: "Password" %>
+							<%= f.submit 'Sign in', class: 'btn btn-primary' %>
+							<% end %>
+							<% end %>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<% if alert %>
+				<div class="alert alert-error">
+					<%= alert %>
+				</div>
+				<% end %>
+				<% if notice %>
+				<div class="alert alert-success">
+					<%= notice %>
+				</div>
+				<% end %>
+				<%= yield %>
+			</div>
 </body>
+</div>
 </html>
 

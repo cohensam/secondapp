@@ -11,7 +11,7 @@ class RoomRate < ActiveRecord::Base
  # vaidates :RoomNumber, length: => {:minimum => 1}
   validates :Layout, presence: true
  
-  attr_accessible :Floor, :Building, :Layout, :Name, :RoomNumber, :Condition
+  attr_accessible :Floor, :Building, :Layout, :Name, :RoomNumber, :Condition, :Roommate
   
   
   scope :high_floor, where('Floor > ?', 10)

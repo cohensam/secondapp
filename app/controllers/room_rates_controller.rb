@@ -9,7 +9,7 @@ class RoomRatesController < ApplicationController
   end
   
   def room_rates
-    names.room_rates
+    current_name.room_rates
   end
   
   def index
@@ -26,7 +26,7 @@ class RoomRatesController < ApplicationController
   # GET /room_rates/1
   # GET /room_rates/1.json
   def show
-    @room_rate = room_rates.find(params[:id])
+    @room_rate = RoomRate.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

@@ -14,8 +14,10 @@ class RoomRatesController < ApplicationController
   
   def index
     @room_rates = RoomRate.all
+    @low = RoomRate.where('Floor < ?', 10)
+
     
-    session['greeting'] = 'hello!'
+    #session['greeting'] = 'hello!'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -27,7 +29,8 @@ class RoomRatesController < ApplicationController
   # GET /room_rates/1.json
   def show
     @room_rate = RoomRate.find(params[:id])
-
+    
+   
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @room_rate }
@@ -85,7 +88,7 @@ class RoomRatesController < ApplicationController
     end
   end
 
-  #Notifications.new_room_rate(@room_rate).deliver
+  Notifications.new_room_rate(@room_rate).deliver
   
   # DELETE /room_rates/1
   # DELETE /room_rates/1.json

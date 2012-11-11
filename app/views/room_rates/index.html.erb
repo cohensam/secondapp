@@ -29,6 +29,22 @@
 
 <% end %>
 </table>
+<table><h2> Floor is less than 10! </h2>
+<% @low.each do |room_rate| %>
+  <tr>
+    <td><%= room_rate.Name %></td>
+    <td><%= room_rate.Roommate %></td>
+    <td><%= room_rate.Building %></td>
+    <td><%= room_rate.Floor %></td>
+    <td><%= room_rate.RoomNumber %></td>
+    <td><%= room_rate.Layout %></td>
+    <td><%= room_rate.Condition %></td>
+    <td><%= link_to 'Show', room_rate %></td>
+    <td><%= link_to 'Edit', edit_room_rate_path(room_rate) %></td>
+    <td><%= link_to 'Destroy', room_rate, confirm: 'Are you sure?', method: :delete %></td>
+
+<% end %>
+</table>
 
 <br />
 

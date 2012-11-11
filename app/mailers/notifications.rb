@@ -8,8 +8,8 @@ class Notifications < ActionMailer::Base
   #
   def new_room_rate(room_rate)
     @room_rate = room_rate
-    #mail_to:room_rate.user.email
-    @greeting = "Hi"
+    #mail_to:names.email IS MAIN PROBLEM DOES NOT RECOGNIZE NAMES OR EMAIL NAMES IS NOT PART O ROOMRATE JUST FYI & NOT RECOGNIZING THAT EMAIL IS ATTACHED TO NAME BUT IT IS
+    #@greeting = "Hi"
 
     mail to: "to@example.org"
   end

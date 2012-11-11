@@ -62,6 +62,9 @@ class RoomRatesController < ApplicationController
       else
         format.html { render action: "new" }
         format.json { render json: @room_rate.errors, status: :unprocessable_entity }
+        if @room_rate.save
+            Notifications.new_room_rate.deliver
+        end
       end
     end
   end
@@ -82,6 +85,8 @@ class RoomRatesController < ApplicationController
     end
   end
 
+  #Notifications.new_room_rate(@room_rate).deliver
+  
   # DELETE /room_rates/1
   # DELETE /room_rates/1.json
   def destroy

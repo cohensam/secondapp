@@ -17,7 +17,7 @@ class RoomRatesController < ApplicationController
     @low = RoomRate.where('Floor < ?', 10)
 
     
-    #session['greeting'] = 'hello!'
+    session['greeting'] = 'hello!'
 
     respond_to do |format|
       format.html # index.html.erb

@@ -87,7 +87,6 @@ class RoomRatesController < ApplicationController
     end
   end
 
-  Notifications.new_room_rate(@room_rate).deliver
   
   # DELETE /room_rates/1
   # DELETE /room_rates/1.json

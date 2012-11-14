@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20121025182233) do
   create_table "room_rates", :force => true do |t|
     t.string   "name"
     t.string   "condition"
-    t.string   "roomnumber"
-    t.string   "floor"
+    t.integer  "roomnumber"
+    t.integer   "floor"
     t.string   "layout"
     t.string   "building"
     t.string   "roommate"

@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  Name: MyString
-  Roommate: MyString
-  Building: MyString
-  Floor: MyString
-  RoomNumber: MyString
-  Layout: MyString
-  Condition: MyString
+  name: MyString
+  roommate: MyString
+  building: MyString
+  floor: MyString
+  roomnumber: MyString
+  layout: MyString
+  condition: MyString
 
 two:
-  Name: MyString
-  Roommate: MyString
-  Building: MyString
-  Floor: MyString
-  RoomNumber: MyString
-  Layout: MyString
-  Condition: MyString
+  name: MyString
+  roommate: MyString
+  building: MyString
+  floor: MyString
+  roomnumber: MyString
+  layout: MyString
+  condition: MyString

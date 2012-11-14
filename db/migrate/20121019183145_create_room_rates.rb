@@ -1,13 +1,13 @@
 class CreateRoomRates < ActiveRecord::Migration
   def change
     create_table :room_rates do |t|
-      t.string :Name
-      t.string :Condition
-      t.string :RoomNumber
-      t.string :Floor
-      t.string :Layout
-      t.string :Building
-      t.string :Roommate
+      t.string :name
+      t.string :condition
+      t.string :roomnumber
+      t.string :floor
+      t.string :layout
+      t.string :building
+      t.string :roommate
 
       t.timestamps
     end

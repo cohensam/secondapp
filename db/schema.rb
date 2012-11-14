@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(:version => 20121025182233) do
   add_index "names", ["reset_password_token"], :name => "index_names_on_reset_password_token", :unique => true
 
   create_table "room_rates", :force => true do |t|
-    t.string   "Name"
-    t.string   "Condition"
-    t.string   "RoomNumber"
-    t.string   "Floor"
-    t.string   "Layout"
-    t.string   "Building"
-    t.string   "Roommate"
+    t.string   "name"
+    t.string   "condition"
+    t.string   "roomnumber"
+    t.string   "floor"
+    t.string   "layout"
+    t.string   "building"
+    t.string   "roommate"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

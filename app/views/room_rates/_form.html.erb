@@ -16,72 +16,72 @@
 <div class="row spacer">
 <form class="form-horizontal">
   <div class="field">
-  	<div class="text-error text-font-papyrus control-group <%= warningfor @room_rate, :Name %>">
-    <%= f.label :Name, class: 'control-label' %>
+  	<div class="text-error text-font-papyrus control-group <%= warningfor @room_rate, :name %>">
+    <%= f.label :name, class: 'control-label' %>
     <div class = "controls">
-    <%= f.text_field :Name %>
+    <%= f.text_field :name %>
     </div>
   </div>
   </div>
   <div class="field">
-  	<div class ="text-error control-group <%= warningfor @room_rate, :Roommate %>">
-    <%= f.label :Roommate, class: 'control-label' %>
+  	<div class ="text-error control-group <%= warningfor @room_rate, :roommate %>">
+    <%= f.label :roommate, class: 'control-label' %>
     <div class ="controls">
-    <%= f.text_field :Roommate %>
+    <%= f.text_field :roommate %>
     </div>
   </div>
   </div>
   <div class="field">
-  	<div class ="text-error control-group <%= warningfor @room_rate, :Building %>">
-    <%= f.label :Building, class: 'control-label' %>
+  	<div class ="text-error control-group <%= warningfor @room_rate, :building %>">
+    <%= f.label :building, class: 'control-label' %>
         <div class ="controls">
-    <%= f.text_field :Building %>
+    <%= f.text_field :building %>
   </div>
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Floor %>">
-    <%= f.label :Floor, class: 'control-label' %>
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :floor %>">
+    <%= f.label :floor, class: 'control-label' %>
       <div class ="controls">
-    <%= f.text_field :Floor %>
+    <%= f.text_field :floor %>
   </div>
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group <%= warningfor @room_rate, :RoomNumber %>">
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :roomnumber %>">
     <%= f.label "Room Number", class: 'control-label' %>
       <div class ="controls">
-    <%= f.text_field :RoomNumber %>
+    <%= f.text_field :roomnumber %>
   </div>
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Layout %>">
-    <%= f.label :Layout, class: 'control-label' %>
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :layout %>">
+    <%= f.label :layout, class: 'control-label' %>
       <div class ="controls">
-    <%= f.text_field :Layout %>
+    <%= f.text_field :layout %>
   </div>
   </div>
   </div>
   <div class="field">
-  	 	<div class ="text-error control-group <%= warningfor @room_rate, :Condition %>">
-    <%= f.label :Condition, class: 'control-label' %>
+  	 	<div class ="text-error control-group <%= warningfor @room_rate, :condition %>">
+    <%= f.label :condition, class: 'control-label' %>
     <div class ="controls form-inline">
    	<i class="icon-hand-up glyphw" id="hand-up"></i>
-    <%= f.radio_button(:Condition, "Excellent") %> 
-    <%= label_tag(:Condition_poor, "Excellent") %>
+    <%= f.radio_button(:condition, "Excellent") %> 
+    <%= label_tag(:condition_poor, "Excellent") %>
     <i class="icon-thumbs-up glyphw" id="thumbs-up"></i>
-    <%= f.radio_button(:Condition, "Good") %>
-  	<%= label_tag(:Condition_good, "Good") %>
+    <%= f.radio_button(:condition, "Good") %>
+  	<%= label_tag(:condition_good, "Good") %>
   	<i class="icon-hand-right glyphw" id="hand-right"></i>
-  	<%= f.radio_button(:Condition, "Average") %>
-  	<%= label_tag(:Condition_poor, "Average") %>
+  	<%= f.radio_button(:condition, "Average") %>
+  	<%= label_tag(:condition_poor, "Average") %>
   	<i class="icon-thumbs-down glyphw" id="thumbs-down"></i>
-  	<%= f.radio_button(:Condition, "Poor") %>
-  	<%= label_tag(:Condition_poor, "Poor") %>
+  	<%= f.radio_button(:condition, "Poor") %>
+  	<%= label_tag(:condition_poor, "Poor") %>
   	<i class="icon-hand-down glyphw" id="hand-down"></i>
-  	<%= f.radio_button(:Condition, "Uninhabitable") %>
-  	<%= label_tag(:Condition_poor, "Uninhabitable") %>
+  	<%= f.radio_button(:condition, "Uninhabitable") %>
+  	<%= label_tag(:condition_poor, "Uninhabitable") %>
   </div>
   </div>
   </div>

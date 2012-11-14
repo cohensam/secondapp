@@ -65,8 +65,8 @@ Secondapp::Application.configure do
     :address => 'smtp.sendgrid.net',
     :port => '587',
     :authentication => :plain,
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
+    :user_name => ENV['SENDGRID_USERname'],
+    :password => ENV['SENDGRID_password'],
     :domain => 'heroku.com'
   }
   

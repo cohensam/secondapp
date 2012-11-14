@@ -8,7 +8,7 @@ class Notifications < ActionMailer::Base
   #
   def new_room_rate(room_rate)
     @room_rate = room_rate
-    #mail_to:names.email IS MAIN PROBLEM DOES NOT RECOGNIZE NAMES OR EMAIL NAMES IS NOT PART O ROOMRATE JUST FYI & NOT RECOGNIZING THAT EMAIL IS ATTACHED TO NAME BUT IT IS
+    #mail_to:names.email IS MAIN PROBLEM DOES NOT RECOGNIZE nameS OR email nameS IS NOT PART O ROOMRATE JUST FYI & NOT RECOGNIZING THAT email IS ATTACHED TO name BUT IT IS
     #@greeting = "Hi"
 
     mail to: "samanthalynn@optonline.net"

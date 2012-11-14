@@ -30,8 +30,8 @@ describe "RoomRates" do
       click_link
       click_button
       click_on
-      fill_in "Name", with: "Samantha"
-      select "Name", from: "Samantha"
+      fill_in "name", with: "Samantha"
+      select "name", from: "Samantha"
       error_message = "Amount can't be blank"
       debugger;1
       page.has_content? (error_message)
@@ -40,7 +40,7 @@ describe "RoomRates" do
     it 'passed' do
       visit room_rate_path
       click_link "New Room_rate"
-      fill_in "Name", with: "Samantha"
+      fill_in "name", with: "Samantha"
       click_on "Create Room rate"
       page.should_have_content "successful"
     end

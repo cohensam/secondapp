@@ -14,7 +14,7 @@ class RoomRate < ActiveRecord::Base
   attr_accessible :Floor, :Building, :Layout, :Name, :RoomNumber, :Condition, :Roommate
   
   
-  scope :high_floor, where('`Floor` > ?', 10)
-  scope :low_floor, where('`Floor` < ?', 10)
+  scope :high_floor, where('"Floor" > ?', 10)
+  scope :low_floor, where('"Floor" < ?', 10)
   
 end

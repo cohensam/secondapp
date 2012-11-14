@@ -60,14 +60,13 @@ class RoomRatesController < ApplicationController
 
     respond_to do |format|
       if @room_rate.save
+        Notifications.new_room_rate(@room_rate).deliver
         format.html { redirect_to @room_rate, notice: 'Room rate was successfully created.' }
         format.json { render json: @room_rate, status: :created, location: @room_rate }
       else
         format.html { render action: "new" }
         format.json { render json: @room_rate.errors, status: :unprocessable_entity }
-        if @room_rate.save
-            Notifications.new_room_rate.deliver
-        end
+        
       end
     end
   end

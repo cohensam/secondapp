@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function () {
+var $display = $("#display");
+$("#helptext").hide();
+$("#help").toggle(function () {
+$("#helptext").show()},function () {
+	$("#helptext").hide()});
+});

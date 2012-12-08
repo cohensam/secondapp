@@ -16,5 +16,10 @@ class RoomRate < ActiveRecord::Base
   
   scope :high_floor, where('floor > ?', 10)
   scope :low_floor, where('floor < ?', 10)
+  scope :excellent, where('condition = ?', "Excellent")
+  scope :good, where('condition = ?', "Good")
+  scope :average, where('condition = ?', "Average")
+  scope :poor, where('condition = ?', "Poor")
+  scope :uninhabitable, where('condition = ?', "Uninhabitable")
   
 end

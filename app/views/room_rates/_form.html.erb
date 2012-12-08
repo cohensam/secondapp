@@ -67,19 +67,14 @@
   	 	<div class ="text-error control-group <%= warningfor @room_rate, :condition %>">
     <%= f.label :condition, class: 'control-label' %>
     <div class ="controls form-inline">
-   	<i class="icon-hand-up glyphw" id="hand-up"></i>
     <%= f.radio_button(:condition, "Excellent") %> 
     <%= label_tag(:condition_poor, "Excellent") %>
-    <i class="icon-thumbs-up glyphw" id="thumbs-up"></i>
     <%= f.radio_button(:condition, "Good") %>
   	<%= label_tag(:condition_good, "Good") %>
-  	<i class="icon-hand-right glyphw" id="hand-right"></i>
   	<%= f.radio_button(:condition, "Average") %>
   	<%= label_tag(:condition_poor, "Average") %>
-  	<i class="icon-thumbs-down glyphw" id="thumbs-down"></i>
   	<%= f.radio_button(:condition, "Poor") %>
   	<%= label_tag(:condition_poor, "Poor") %>
-  	<i class="icon-hand-down glyphw" id="hand-down"></i>
   	<%= f.radio_button(:condition, "Uninhabitable") %>
   	<%= label_tag(:condition_poor, "Uninhabitable") %>
   </div>

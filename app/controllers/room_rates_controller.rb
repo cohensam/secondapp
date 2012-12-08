@@ -15,9 +15,11 @@ class RoomRatesController < ApplicationController
   def index
     @room_rates = RoomRate.all
     @low = RoomRate.low_floor
-
-    
-    
+    @excellent = RoomRate.excellent
+    @good = RoomRate.good
+    @average = RoomRate.average
+    @poor = RoomRate.poor
+    @uninhabitable = RoomRate.uninhabitable
 
     respond_to do |format|
       format.html # index.html.erb

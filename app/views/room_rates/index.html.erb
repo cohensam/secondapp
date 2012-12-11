@@ -1,9 +1,8 @@
 <h1>Room Rates</h1>
 
-
 <h3> Excellent Condition </h3>
-	<table>
-  <tr>
+<table>
+	 <tr>
     <th>Name</th>
     <th>Roommate</th>
     <th>Building</th>
@@ -15,9 +14,6 @@
     <th></th>
     <th></th>
   </tr>
-
-</table>
-<table>
 <% @excellent.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -37,7 +33,7 @@
 </table>
 <h3> Good Condition </h3>
 <table>
-  <tr>
+	<tr>
     <th>Name</th>
     <th>Roommate</th>
     <th>Building</th>
@@ -49,9 +45,6 @@
     <th></th>
     <th></th>
   </tr>
-
-</table>
-<table>
 <% @good.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -70,8 +63,8 @@
 
 </table>
 <h3> Average Condition </h3>
-<table>
-  <tr>
+	<table>
+	<tr>
     <th>Name</th>
     <th>Roommate</th>
     <th>Building</th>
@@ -83,9 +76,6 @@
     <th></th>
     <th></th>
   </tr>
-
-</table>
-<table>
 <% @average.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -104,8 +94,8 @@
 
 </table>
 <h3> Poor Condition </h3>
-<table>
-  <tr>
+	<table>
+	<tr>
     <th>Name</th>
     <th>Roommate</th>
     <th>Building</th>
@@ -117,9 +107,6 @@
     <th></th>
     <th></th>
   </tr>
-
-</table>
-<table>
 <% @poor.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -138,8 +125,8 @@
 
 </table>
 <h3> Uninhabitable Condition </h3>
-<table>
-  <tr>
+	<table>
+		<tr>
     <th>Name</th>
     <th>Roommate</th>
     <th>Building</th>
@@ -151,9 +138,6 @@
     <th></th>
     <th></th>
   </tr>
-
-</table>
-<table>
 <% @uninhabitable.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>

@@ -1,6 +1,8 @@
 <h1>Room Rates</h1>
 
-<table>
+
+<h3> Excellent Condition </h3>
+	<table>
   <tr>
     <th>Name</th>
     <th>Roommate</th>
@@ -14,40 +16,8 @@
     <th></th>
   </tr>
 
-<% @room_rates.each do |room_rate| %>
-  <tr>
-    <td><%= room_rate.name %></td>
-    <td><%= room_rate.roommate %></td>
-    <td><%= room_rate.building %></td>
-    <td><%= room_rate.floor %></td>
-    <td><%= room_rate.roomnumber %></td>
-    <td><%= room_rate.layout %></td>
-    <td><%= room_rate.condition %></td>
-    <td><%= link_to 'Show', room_rate %></td>
-    <td><%= link_to 'Edit', edit_room_rate_path(room_rate) %></td>
-    <td><%= link_to 'Destroy', room_rate, confirm: 'Are you sure?', method: :delete %></td>
-
-<% end %>
 </table>
-<table><h2> floor is less than 10! </h2>
-<% @low.each do |room_rate| %>
-  <tr>
-    <td><%= room_rate.name %></td>
-    <td><%= room_rate.roommate %></td>
-    <td><%= room_rate.building %></td>
-    <td><%= room_rate.floor %></td>
-    <td><%= room_rate.roomnumber %></td>
-    <td><%= room_rate.layout %></td>
-    <td><%= room_rate.condition %></td>
-    <td><%= link_to 'Show', room_rate %></td>
-    <td><%= link_to 'Edit', edit_room_rate_path(room_rate) %></td>
-    <td><%= link_to 'Destroy', room_rate, confirm: 'Are you sure?', method: :delete %></td>
-
-<% end %>
-</table>
-
-</table>
-<table><h2> Excellent Condition </h2>
+<table>
 <% @excellent.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -65,7 +35,23 @@
 </table>
 
 </table>
-<table><h2> Good Condition </h2>
+<h3> Good Condition </h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Roommate</th>
+    <th>Building</th>
+    <th>Floor</th>
+    <th>Room Number</th>
+    <th>Layout</th>
+    <th>Condition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+</table>
+<table>
 <% @good.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -83,7 +69,23 @@
 </table>
 
 </table>
-<table><h2> Average Condition </h2>
+<h3> Average Condition </h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Roommate</th>
+    <th>Building</th>
+    <th>Floor</th>
+    <th>Room Number</th>
+    <th>Layout</th>
+    <th>Condition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+</table>
+<table>
 <% @average.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -101,7 +103,23 @@
 </table>
 
 </table>
-<table><h2> Poor Condition </h2>
+<h3> Poor Condition </h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Roommate</th>
+    <th>Building</th>
+    <th>Floor</th>
+    <th>Room Number</th>
+    <th>Layout</th>
+    <th>Condition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+</table>
+<table>
 <% @poor.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>
@@ -119,7 +137,23 @@
 </table>
 
 </table>
-<table><h2> Uninhabitable Condition </h2>
+<h3> Uninhabitable Condition </h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Roommate</th>
+    <th>Building</th>
+    <th>Floor</th>
+    <th>Room Number</th>
+    <th>Layout</th>
+    <th>Condition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+</table>
+<table>
 <% @uninhabitable.each do |room_rate| %>
   <tr>
     <td><%= room_rate.name %></td>

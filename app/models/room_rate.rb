@@ -10,6 +10,7 @@ class RoomRate < ActiveRecord::Base
   validates :roomnumber, numericality: true
  # vaidates :roomnumber, length: => {:minimum => 1}
   validates :layout, presence: true
+  validates :condition, presence: true
  
   attr_accessible :floor, :building, :layout, :name, :roomnumber, :condition, :roommate
   
